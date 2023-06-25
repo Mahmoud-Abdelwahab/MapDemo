@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="BranchCardCell" id="gTV-IL-0wX" customClass="BranchCardCell" customModule="MapDemo" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="383" height="150"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="383" height="150"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D32-cV-spQ">
+                        <rect key="frame" x="15.000000000000004" y="15" width="41.333333333333343" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="TopLeft" horizontalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SWS-Rm-BtV">
+                        <rect key="frame" x="15.000000000000004" y="47" width="41.333333333333343" height="20.333333333333329"/>
+                        <attributedString key="attributedText">
+                            <fragment content="Label">
+                                <attributes>
+                                    <font key="NSFont" metaFont="system" size="17"/>
+                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="5" tighteningFactorForTruncation="0.0"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Working Hours" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rhF-wr-wMl">
+                        <rect key="frame" x="34" y="113.66666666666667" width="113" height="21.000000000000014"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="4uH-hC-tIS">
+                        <rect key="frame" x="336" y="15" width="32" height="32"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="32" id="BEQ-pW-1rf"/>
+                            <constraint firstAttribute="width" constant="32" id="KMr-z3-Lls"/>
+                        </constraints>
+                    </imageView>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="JY5-vo-FM1">
+                        <rect key="frame" x="13" y="118" width="16" height="16"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="16" id="8Ft-sK-dln"/>
+                            <constraint firstAttribute="height" constant="16" id="ESm-Jp-Vap"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="08:05" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ge5-F1-ADP">
+                        <rect key="frame" x="149" y="113.66666666666667" width="46" height="21.000000000000014"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1000" verticalHuggingPriority="251" text="98789.77 km" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j9K-7D-jgf">
+                        <rect key="frame" x="61.333333333333336" y="15" width="100.66666666666666" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <color key="backgroundColor" systemColor="systemRedColor"/>
+            <constraints>
+                <constraint firstItem="j9K-7D-jgf" firstAttribute="centerY" secondItem="D32-cV-spQ" secondAttribute="centerY" id="2NB-0B-Ppb"/>
+                <constraint firstItem="SWS-Rm-BtV" firstAttribute="top" secondItem="D32-cV-spQ" secondAttribute="bottom" constant="11" id="2Vr-RQ-8AG"/>
+                <constraint firstItem="SWS-Rm-BtV" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="15" id="4WA-fD-Iwd"/>
+                <constraint firstItem="rhF-wr-wMl" firstAttribute="centerY" secondItem="JY5-vo-FM1" secondAttribute="centerY" constant="-2" id="6g6-fg-cn9"/>
+                <constraint firstItem="JY5-vo-FM1" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="13" id="7Kz-oc-iBZ"/>
+                <constraint firstItem="4uH-hC-tIS" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="SWS-Rm-BtV" secondAttribute="trailing" constant="5" id="7R3-Sa-fta"/>
+                <constraint firstAttribute="trailing" secondItem="4uH-hC-tIS" secondAttribute="trailing" constant="15" id="CMp-EU-igN"/>
+                <constraint firstItem="4uH-hC-tIS" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="15" id="DSQ-Rn-nHU"/>
+                <constraint firstItem="ge5-F1-ADP" firstAttribute="centerY" secondItem="rhF-wr-wMl" secondAttribute="centerY" id="GUS-hx-snO"/>
+                <constraint firstItem="D32-cV-spQ" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="15" id="Pfp-TJ-0hy"/>
+                <constraint firstItem="ge5-F1-ADP" firstAttribute="leading" secondItem="rhF-wr-wMl" secondAttribute="trailing" constant="2" id="ZDh-hG-vhX"/>
+                <constraint firstItem="rhF-wr-wMl" firstAttribute="leading" secondItem="JY5-vo-FM1" secondAttribute="trailing" constant="5" id="bR7-TC-lWF"/>
+                <constraint firstAttribute="bottom" secondItem="JY5-vo-FM1" secondAttribute="bottom" constant="16" id="bRS-p9-bKx"/>
+                <constraint firstItem="D32-cV-spQ" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="15" id="bmM-tk-Gdl"/>
+                <constraint firstItem="JY5-vo-FM1" firstAttribute="top" relation="greaterThanOrEqual" secondItem="SWS-Rm-BtV" secondAttribute="bottom" constant="12" id="dYz-YZ-F1u"/>
+                <constraint firstItem="j9K-7D-jgf" firstAttribute="leading" secondItem="D32-cV-spQ" secondAttribute="trailing" constant="5" id="efY-7B-lsb"/>
+                <constraint firstItem="4uH-hC-tIS" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="j9K-7D-jgf" secondAttribute="trailing" constant="5" id="rvi-GS-ejJ"/>
+            </constraints>
+            <size key="customSize" width="383" height="110"/>
+            <connections>
+                <outlet property="branchAddressLabel" destination="SWS-Rm-BtV" id="hku-lt-Bzy"/>
+                <outlet property="branchNameLabel" destination="D32-cV-spQ" id="JLZ-wV-szJ"/>
+                <outlet property="distanceLabel" destination="j9K-7D-jgf" id="Ri9-om-cQD"/>
+                <outlet property="supportOnlineBookingIcon" destination="4uH-hC-tIS" id="L1D-eB-dHg"/>
+                <outlet property="timeLabel" destination="ge5-F1-ADP" id="AnU-UF-WDn"/>
+                <outlet property="workingHoursIcon" destination="JY5-vo-FM1" id="ftP-Zm-U2v"/>
+                <outlet property="workingHoursLabel" destination="rhF-wr-wMl" id="Yyr-Lp-v6I"/>
+            </connections>
+            <point key="canvasLocation" x="203.84615384615384" y="-59.004739336492889"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

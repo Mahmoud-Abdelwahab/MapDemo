@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MapDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3es-Kr-rFR" customClass="BMMapView" customModule="MapDemo" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8PJ-cI-H2T">
+                                <rect key="frame" x="20" y="748" width="353" height="50"/>
+                                <color key="backgroundColor" red="0.74901960779999999" green="0.20784313730000001" blue="0.2784313725" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="0aQ-FH-OoC"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="click me!"/>
+                                <connections>
+                                    <action selector="addAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fPb-Dp-iaw"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ohu-fi-8dR" customClass="BranchCardView" customModule="MapDemo" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="528" width="393" height="200"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="O4V-OW-jhz"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="3es-Kr-rFR" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="0by-1n-DBJ"/>
+                            <constraint firstItem="3es-Kr-rFR" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="CFG-ys-RxX"/>
+                            <constraint firstItem="3es-Kr-rFR" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="QWj-VN-vMl"/>
+                            <constraint firstItem="Ohu-fi-8dR" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="dBH-PT-5ZM"/>
+                            <constraint firstItem="Ohu-fi-8dR" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="f5o-rv-Vn3"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="8PJ-cI-H2T" secondAttribute="trailing" constant="20" id="hOB-ed-knl"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="8PJ-cI-H2T" secondAttribute="bottom" constant="20" id="imr-2I-8Y3"/>
+                            <constraint firstItem="8PJ-cI-H2T" firstAttribute="top" secondItem="Ohu-fi-8dR" secondAttribute="bottom" constant="20" id="p95-XB-GN0"/>
+                            <constraint firstAttribute="bottom" secondItem="3es-Kr-rFR" secondAttribute="bottom" id="s1e-R8-oxg"/>
+                            <constraint firstItem="8PJ-cI-H2T" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="sCx-pc-Cqt"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="branchCardView" destination="Ohu-fi-8dR" id="Pby-Y2-8Gf"/>
+                        <outlet property="mapView" destination="3es-Kr-rFR" id="9ou-9H-WKK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="101.5267175572519" y="3.5211267605633805"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
